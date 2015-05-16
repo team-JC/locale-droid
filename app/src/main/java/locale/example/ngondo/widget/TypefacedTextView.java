@@ -23,7 +23,7 @@ public class TypefacedTextView extends TextView{
         styledAttrs.recycle();
 
         if (fontName != null) {
-            Typeface typeface = Typeface.createFromAsset(context.getAssets(), fontName);
+            Typeface typeface = Typeface.createFromAsset(context.getAssets(), "Roboto-Thin.ttf");
             setTypeface(typeface);
         }
     }
