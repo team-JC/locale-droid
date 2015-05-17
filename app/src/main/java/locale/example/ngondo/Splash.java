@@ -8,13 +8,23 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 
 
 public class Splash extends Activity {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "6Tn8uBPkgAbMHYZnVvlNjx9ml";
+    private static final String TWITTER_SECRET = "zoWyytF6LA0Otny2d1I8w81FneoWMlQJxWYYLajtdzrWny1DGN";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         //This window feature gives the full screen

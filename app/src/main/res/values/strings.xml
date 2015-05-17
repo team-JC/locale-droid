@@ -11,6 +11,16 @@
     <string name="title_activity_attractions">Attractions</string>
     <string name="title_activity_shopping">Shopping</string>
     <string name="title_activity_share">Share</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="Name">Name</string>
+    <string name="Login">LOGIN</string>
+    <string name="Signup">Signup</string>
+    <string name="title_activity_register">register</string>
+    <string name="Register">Register</string>
+    <string name="regHere">Register here</string>
+
+
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
     <string name="dummy">Custom fonts in XML are easy</string>
