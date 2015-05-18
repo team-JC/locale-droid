@@ -1,5 +1,6 @@
 package locale.example.ngondo;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 
-public class Login extends ActionBarActivity implements View.OnClickListener {
+public class Login extends Activity implements View.OnClickListener {
 
     Button bLogin;
     EditText etUsername, etPassword;
