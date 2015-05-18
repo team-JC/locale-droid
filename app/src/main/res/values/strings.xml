@@ -25,4 +25,8 @@
     <string name="add_widget">Add widget</string>
     <string name="dummy">Custom fonts in XML are easy</string>
     <string name="loc">localé</string>
+    <string name="title_activity_infotwo">Infotwo</string>
+    <string name="info1">Find...Capture...Post</string>
+    <string name="info2">Locale helps you to find places that you never knew existed. Just...</string>
+    <string name="ok">OK</string>
 </resources>

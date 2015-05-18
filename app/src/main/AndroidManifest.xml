@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="locale.example.ngondo" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -48,10 +50,10 @@
             android:name=".Share"
             android:label="@string/title_activity_share" >
         </activity>
-        <!--<activity-->
-            <!--android:name=".Register"-->
-            <!--android:label="@string/title_activity_register" >-->
-        <!--</activity>-->
+        <!-- <activity -->
+        <!-- android:name=".Register" -->
+        <!-- android:label="@string/title_activity_register" > -->
+        <!-- </activity> -->
         <activity
             android:name=".register"
             android:label="@string/title_activity_register" >
@@ -60,7 +62,11 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="caa08cb8500506feea8c2dbf2b7965a6704921a8" />
+
+        <activity
+            android:name=".Infotwo"
+            android:label="@string/title_activity_infotwo" >
+        </activity>
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

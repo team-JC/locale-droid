@@ -1,38 +1,33 @@
 package locale.example.ngondo;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.app.Fragment;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
-
-public class Info extends ActionBarActivity {
+public class Info extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
+
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_info, menu);
-        return true;
+    private void addInfoFragment(){
+        //creating instance of Fragment one
+        Fragment fg1 = InfoFragmentone.newInstance();
+        
+
+
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    public static class InfoFragmentone extends Fragment{
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        public static Fragment newInstance(){
+            InfoFragmentone fgone = new InfoFragmentone();
+            return fgone;
         }
 
-        return super.onOptionsItemSelected(item);
     }
 }
