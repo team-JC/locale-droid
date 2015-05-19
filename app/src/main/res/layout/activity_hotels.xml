@@ -16,8 +16,7 @@
         android:orientation="horizontal"
         android:gravity="bottom"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentLeft="true" >
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/fab"
