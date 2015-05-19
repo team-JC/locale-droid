@@ -8,6 +8,10 @@
     android:background="@color/primary_dark">
 
 
-
+    <ImageView
+        android:id="@+id/ivAttraction"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/attraction"/>
 
 </RelativeLayout>
