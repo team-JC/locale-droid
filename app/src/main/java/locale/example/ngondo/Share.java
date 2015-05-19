@@ -1,38 +1,26 @@
 package locale.example.ngondo;
 
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.app.Application;
 
 
-public class Share extends ActionBarActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_share);
-    }
+import com.parse.Parse;
+import com.parse.ParseObject;
+import com.parse.ParseUser;
+
+//This is where we register our Locale.java class that holds the getters and setters
+public class Share extends Application {
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_share, menu);
-        return true;
-    }
+    public void onCreate() {
+        super.onCreate();
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        ParseObject.registerSubclass(Locale.class);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        //Parse application credentials
+        Parse.initialize(this, "ltc72x05iJA3XQIiCbrVvf02GkVr95LrXCaeU8zu", "tzWSgyKxt2EIH6U5cTgYGgpgxjJ21x0bIYz709ni");
 
-        return super.onOptionsItemSelected(item);
+        ParseUser.enableAutomaticUser();
+
     }
 }

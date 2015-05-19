@@ -46,4 +46,6 @@ dependencies {
         transitive = true;
     }
     compile 'com.github.clans:fab:1.5.0'
+    compile files('Parse-1.9.2.jar')
+    compile 'com.parse.bolts:bolts-android:1.+'
 }
