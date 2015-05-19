@@ -9,18 +9,25 @@
 
 
 <!--</RelativeLayout>-->
-<locale.example.ngondo.widget.TypefacedTextView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:namespace="http://schemas.android.com/apk/locale.example.ngondo"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:text="@string/loc"
-    android:id="@+id/title"
-    android:textColor="#fff"
-    android:textSize="50dp"
-    android:background="@color/primary"
-    namespace:typeface="Roboto-Thin.ttf"
-    android:gravity="center_vertical|center_horizontal">
+    android:orientation="vertical">
 
+    <locale.example.ngondo.widget.TypefacedTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:namespace="http://schemas.android.com/apk/locale.example.ngondo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/loc"
+        android:id="@+id/title"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:background="@drawable/bg3"
+        namespace:typeface="Roboto-Thin.ttf"
+        android:gravity="center|top">
+    </locale.example.ngondo.widget.TypefacedTextView>
 
-</locale.example.ngondo.widget.TypefacedTextView>
+</LinearLayout>
+
