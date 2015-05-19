@@ -33,4 +33,6 @@
     <string name="find">Find the next cool restaurant, attraction or hotels near you. So...</string>
     <string name="come">Come and take a look inside!!!</string>
     <string name="next">Find the next cool spot</string>
+    <string name="title_activity_add_locale">AddLocale</string>
+    <string name="check">CHECK OUT THE LOCALE</string>
 </resources>

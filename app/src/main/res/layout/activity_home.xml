@@ -24,12 +24,10 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginRight="8dp"
-            android:layout_gravity="right"
             android:src="@drawable/ic_edit"
             fab:fab_colorNormal="@color/primary"
             fab:fab_colorPressed="@color/primary_light"
             fab:fab_colorRipple="@color/accent"/>
-
     </LinearLayout>
 
 
