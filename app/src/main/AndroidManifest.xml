@@ -58,10 +58,6 @@
         <!-- android:name=".Register" -->
         <!-- android:label="@string/title_activity_register" > -->
         <!-- </activity> -->
-        <activity
-            android:name=".register"
-            android:label="@string/title_activity_register" >
-        </activity>
 
         <meta-data
             android:name="io.fabric.ApiKey"

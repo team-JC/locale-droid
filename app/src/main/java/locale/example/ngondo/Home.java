@@ -1,6 +1,7 @@
 package locale.example.ngondo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -26,7 +27,8 @@ public class Home extends Activity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Home.this, "FAB is working", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(Home.this,AddLocale.class);
+                startActivity(i);
             }
         });
 

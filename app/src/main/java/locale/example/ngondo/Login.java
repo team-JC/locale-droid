@@ -21,13 +21,11 @@ import com.twitter.sdk.android.core.TwitterSession;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 
-public class Login extends Activity implements View.OnClickListener {
-
-    Button bLogin;
-    EditText etUsername, etPassword;
-    TextView tvRegisterLink;
+public class Login extends Activity {
 
     private TwitterLoginButton loginButton;
+    Button check;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,38 +45,21 @@ public class Login extends Activity implements View.OnClickListener {
                 //Toast.makeText(this,"Login failed check credentials or network connection",Toast.LENGTH_SHORT).show();
             }
         });
-        bLogin = (Button) findViewById(R.id.bLogin);
-        etPassword = (EditText) findViewById(R.id.etPassword);
-        etUsername = (EditText) findViewById(R.id.etUsername);
-        tvRegisterLink = (TextView) findViewById(R.id.tvRegisterLink);
 
-
-        bLogin.setOnClickListener(this);
-        tvRegisterLink.setOnClickListener(this);
+        check=(Button)findViewById(R.id.checkout);
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Login.this,Home.class);
+                startActivity(i);
+            }
+        });
     }
 
-        private void toHome(){
-            Intent i = new Intent(this, Home.class);
-            startActivity(i);
+    private void toHome(){
+        Intent i = new Intent(this, Home.class);
+        startActivity(i);
     }
 
-        @Override
-        protected void onActivityResult ( int requestCode, int resultCode, Intent data){
-            super.onActivityResult(requestCode, resultCode, data);
-            loginButton.onActivityResult(requestCode, resultCode, data);
-        }
-        @Override
-        public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.bLogin:
 
-
-                break;
-            case R.id.tvRegisterLink:
-                // start the register activity when the textview is clicked
-                startActivity(new Intent(this, register.class));
-                break;
-        }
-
-    }
 }

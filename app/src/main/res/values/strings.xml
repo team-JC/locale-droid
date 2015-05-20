@@ -34,8 +34,10 @@
     <string name="come">Come and take a look inside!!!</string>
     <string name="next">Find the next cool spot</string>
     <string name="title_activity_add_locale">AddLocale</string>
-    <string name="check">CHECK OUT THE LOCALE</string>
+    <string name="check">OR CHECK OUT THE LOCALEs </string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="n">NEAR</string>
+    <string name="btncheck">CHECK OUT LOCALE</string>
 </resources>
