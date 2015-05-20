@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 
 public class AddLocale extends Activity {
-    private Locale locale;
+    private Locale locale=new Locale();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,7 @@ public class AddLocale extends Activity {
                     .commit();
         }
     }
-
-    public Locale getCurrentLocale()   {
+    public Locale getCurrentLocale() {
         return locale;
     }
 }

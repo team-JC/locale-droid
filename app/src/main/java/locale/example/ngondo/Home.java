@@ -1,26 +1,26 @@
 package locale.example.ngondo;
 
-import android.app.Activity;
+
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
 
 
 import com.github.clans.fab.FloatingActionButton;
-import com.parse.Parse;
-import com.parse.ParseObject;
+import com.parse.ParseQueryAdapter;
 
 
-public class Home extends Activity {
+public class Home extends ListActivity {
+    private ParseQueryAdapter<Locale> mainAdapter;
     private FloatingActionButton fab;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        getListView().setClickable(false);
         //Instantiate FAB
         fab= (FloatingActionButton) findViewById(R.id.fab);
         //Add listeners to FAB
@@ -31,6 +31,15 @@ public class Home extends Activity {
                 startActivity(i);
             }
         });
+
+        mainAdapter=new ParseQueryAdapter<Locale>(this, Locale.class);
+        mainAdapter.setTextKey("title");
+        mainAdapter.setTextKey("category");
+        mainAdapter.setTextKey("streetname");
+        mainAdapter.setTextKey("plocation");
+        mainAdapter.setImageKey("photo");
+
+        setListAdapter(mainAdapter);
 
 //        // Enable Local Datastore.
 //        Parse.enableLocalDatastore(this);

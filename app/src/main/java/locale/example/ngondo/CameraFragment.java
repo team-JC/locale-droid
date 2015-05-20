@@ -61,18 +61,16 @@ public class CameraFragment extends Fragment {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (camera == null)
                     return;
                 camera.takePicture(new Camera.ShutterCallback() {
-
                     @Override
                     public void onShutter() {
                         // nothing to do
+//                        AddLocaleFragment back = new AddLocaleFragment();
+//                        back.onResume();
                     }
-
                 }, null, new Camera.PictureCallback() {
-
                     @Override
                     public void onPictureTaken(byte[] data, Camera camera) {
                         saveScaledPhoto(data);

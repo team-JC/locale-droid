@@ -2,17 +2,11 @@ package locale.example.ngondo;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.content.Intent;
-import android.widget.Toast;
+
 
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.Result;
@@ -22,7 +16,6 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 
 public class Login extends Activity {
-
     private TwitterLoginButton loginButton;
     Button check;
 
@@ -55,11 +48,8 @@ public class Login extends Activity {
             }
         });
     }
-
     private void toHome(){
         Intent i = new Intent(this, Home.class);
         startActivity(i);
     }
-
-
 }

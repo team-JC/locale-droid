@@ -77,6 +77,8 @@ public class AddLocaleFragment extends Fragment {
                     public void done(ParseException e) {
                         if (e == null) {
                             getActivity().setResult(Activity.RESULT_OK);
+                            Toast.makeText(getActivity(),"Successfully saved Locale",Toast.LENGTH_SHORT)
+                                    .show();
                             getActivity().finish();
                         } else {
                             Toast.makeText(
@@ -86,7 +88,6 @@ public class AddLocaleFragment extends Fragment {
                         }
                     }
                 });
-
             }
         });
 
@@ -113,7 +114,6 @@ public class AddLocaleFragment extends Fragment {
         transaction.addToBackStack("AddLocaleFragment");
         transaction.commit();
     }
-
     /*
 	 * On resume, check and see if a photo has been set from the
 	 * CameraFragment. If it has, load the image in this fragment and make the
