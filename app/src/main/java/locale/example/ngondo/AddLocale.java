@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 
 public class AddLocale extends Activity {
-    private Share share;
+    private Locale locale;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class AddLocale extends Activity {
         }
     }
 
-    public Share getCurrentShare() {
-        return share;
+    public Locale getCurrentLocale()   {
+        return locale;
     }
 }
