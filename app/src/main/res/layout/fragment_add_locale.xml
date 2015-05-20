@@ -1,7 +1,7 @@
-<ScrollView
-    android:layout_height="wrap_content"
-    android:layout_width="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<ScrollView-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
 
     <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,13 +12,31 @@
         android:orientation="vertical"
         tools:context="locale.example.ngondo.AddLocaleFragment">
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cam"
+            android:text="@string/takepho"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/imageButton" />
+            android:layout_alignLeft="@+id/btncancel"
+            android:layout_alignStart="@+id/btncancel"
+            android:layout_alignRight="@+id/btnsave"
+            android:layout_alignEnd="@+id/btnsave"
+            android:id="@+id/btntakephoto" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:src="@drawable/cam"-->
+            <!--android:id="@+id/imageButton"-->
+            <!--android:layout_below="@+id/btntakephoto"-->
+            <!--android:layout_centerHorizontal="true" />-->
+    <com.parse.ParseImageView
+        android:id="@+id/localepreview"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btntakephoto"
+        android:layout_centerHorizontal="true"
+        />
 
         <EditText
             android:layout_width="wrap_content"
@@ -27,14 +45,14 @@
             android:hint="Name of the place "
             android:ems="10"
             android:id="@+id/editText"
-            android:layout_below="@+id/imageButton"
+            android:layout_below="@+id/localepreview"
             android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="@string/br"
         android:ems="10"
         android:id="@+id/editText2"
         android:layout_below="@+id/editText"
@@ -44,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="@string/str"
         android:ems="10"
         android:id="@+id/editText3"
         android:layout_below="@+id/editText2"
@@ -54,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="@string/cats"
         android:ems="10"
         android:id="@+id/editText4"
         android:layout_below="@+id/editText3"
@@ -73,30 +91,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="@string/ploc"
         android:ems="10"
         android:id="@+id/editText5"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_alignBottom="@+id/editText5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="@string/can"
+        android:id="@+id/btncancel"
+        android:layout_alignTop="@+id/btnsave"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button3"
-        android:layout_alignBottom="@+id/editText5"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:text="@string/save"
+        android:id="@+id/btnsave"
+        android:layout_below="@+id/editText5"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
 
 
 </RelativeLayout>
-</ScrollView>
+<!--</ScrollView>-->

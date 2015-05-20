@@ -40,4 +40,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="n">NEAR</string>
     <string name="btncheck">CHECK OUT LOCALE</string>
+    <string name="br">Brief description</string>
+    <string name="cats">HOTEL,RESTAURANT,SHOPPING,ATTRACTION</string>
+    <string name="str">Street Name</string>
+    <string name="ploc">Prominent Location</string>
+    <string name="can">CANCEL</string>
+    <string name="save">SAVE</string>
+    <string name="takepho">TAKEPHOTO</string>
 </resources>

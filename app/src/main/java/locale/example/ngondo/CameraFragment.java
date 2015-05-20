@@ -37,13 +37,6 @@ public class CameraFragment extends Fragment {
     private ParseFile photoFile;
     private ImageButton imageButton;
 
-
-
-    public CameraFragment() {
-        // Required empty public constructor
-    }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
