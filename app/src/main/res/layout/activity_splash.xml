@@ -13,21 +13,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <locale.example.ngondo.widget.TypefacedTextView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:namespace="http://schemas.android.com/apk/locale.example.ngondo"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:text="@string/loc"
-        android:id="@+id/title"
-        android:textColor="#fff"
-        android:textSize="50dp"
-        android:background="@drawable/bg3"
-        namespace:typeface="Roboto-Thin.ttf"
-        android:gravity="center|top">
-    </locale.example.ngondo.widget.TypefacedTextView>
+    <TextView
+        android:id="@+id/lo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="80dp"
+        android:textColor="@color/primary_dark"
+        android:textAlignment="center"
+        />
 
 </LinearLayout>
 

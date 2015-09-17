@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 
-
+//import com.facebook.drawee.backends.pipeline.Fresco;
 import com.github.clans.fab.FloatingActionButton;
 import com.parse.ParseQueryAdapter;
 
@@ -20,9 +20,11 @@ public class Home extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        //This code initializes the Fresco action that caches images
+        //Fresco.initialize(context);
         getListView().setClickable(false);
         //Instantiate FAB
-        fab= (FloatingActionButton) findViewById(R.id.fab);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         //Add listeners to FAB
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

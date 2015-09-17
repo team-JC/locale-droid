@@ -8,8 +8,13 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+
+//import com.facebook.drawee.backends.pipeline.Fresco;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.TwitterAuthConfig;
+
+import org.w3c.dom.Text;
+
 import io.fabric.sdk.android.Fabric;
 
 
@@ -19,6 +24,7 @@ public class Splash extends Activity {
     private static final String TWITTER_KEY = "6Tn8uBPkgAbMHYZnVvlNjx9ml";
     private static final String TWITTER_SECRET = "zoWyytF6LA0Otny2d1I8w81FneoWMlQJxWYYLajtdzrWny1DGN";
 
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +39,10 @@ public class Splash extends Activity {
 
         //Populate the view with the content of the xml
         setContentView(R.layout.activity_splash);
-        //Add a font
+        //Add a font using typeface
+        Typeface roboto = Typeface.createFromAsset(getAssets(), "rbt_thin.ttf");
+        tv =((TextView)findViewById(R.id.lo));
+        tv.setTypeface(roboto);
 //        initTypeface();
 
         //Handler for setting the activity to go to and the time taken in ms
@@ -52,10 +61,4 @@ public class Splash extends Activity {
         }, 2000);
 
     }
-//    private void initTypeface() {
-//        Typeface roboto = Typeface.createFromAsset(getAssets(),"Roboto-Thin.ttf");
-//        TextView titleText = (TextView)findViewById(R.id.title);
-//        titleText.setTypeface(roboto);
-//
-//    }
 }
