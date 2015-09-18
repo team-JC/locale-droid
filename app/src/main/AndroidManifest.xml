@@ -25,10 +25,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Info"
-            android:label="@string/title_activity_info" >
-        </activity>
-        <activity
             android:name=".Home"
             android:label="@string/title_activity_home" >
         </activity>
@@ -60,10 +56,6 @@
             android:name="io.fabric.ApiKey"
             android:value="caa08cb8500506feea8c2dbf2b7965a6704921a8" />
 
-        <activity
-            android:name=".Infotwo"
-            android:label="@string/title_activity_infotwo" >
-        </activity>
         <activity
             android:name=".AddLocale"
             android:label="@string/title_activity_add_locale" >

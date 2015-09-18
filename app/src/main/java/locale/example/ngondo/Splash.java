@@ -50,7 +50,7 @@ public class Splash extends Activity {
             @Override
             public void run() {
                 //Starting the splash activity
-                Intent i = new Intent(Splash.this, Info.class);
+                Intent i = new Intent(Splash.this, Intro.class);
                 startActivity(i);
                 //This exits the SplashScreen activity
                 this.finish();
