@@ -4,7 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -50,10 +52,10 @@
             android:name=".Shopping"
             android:label="@string/title_activity_shopping" >
         </activity>
-        <!--<activity-->
-            <!--android:name=".Share"-->
-            <!--android:label="@string/title_activity_share" >-->
-        <!--</activity>-->
+        <!-- <activity -->
+        <!-- android:name=".Share" -->
+        <!-- android:label="@string/title_activity_share" > -->
+        <!-- </activity> -->
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="caa08cb8500506feea8c2dbf2b7965a6704921a8" />
@@ -65,6 +67,10 @@
         <activity
             android:name=".AddLocale"
             android:label="@string/title_activity_add_locale" >
+        </activity>
+        <activity
+            android:name=".Intro"
+            android:label="@string/title_activity_intro" >
         </activity>
     </application>
 
