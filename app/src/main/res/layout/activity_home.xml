@@ -9,15 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="locale.example.ngondo.Home"
-    android:background="@color/primary_dark">
+    android:background="@drawable/bgblurr">
 
-    <!--<com.facebook.drawee.view.SimpleDraweeView-->
-        <!--android:id="@+id/my_image_view"-->
-        <!--android:layout_width="130dp"-->
-        <!--android:layout_height="130dp"-->
-        <!--fresco:placeholderImage="@drawable/my_drawable"-->
-        <!--/>-->
-
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/bgblurr"
+        android:scaleType="centerCrop"/>
     <ListView
         android:id="@id/android:list"
         android:layout_width="fill_parent"
@@ -40,7 +38,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginRight="8dp"
-            android:src="@drawable/ic_edit"
+            android:src="@drawable/ic_plus_white_36dp"
+            android:padding="12dp"
             fab:fab_colorNormal="@color/primary"
             fab:fab_colorPressed="@color/primary_light"
             fab:fab_colorRipple="@color/accent"/>
